@@ -6,7 +6,7 @@ let passportWithAddress = {
         city: "LA"
     }
 };
-
+console.log(passportWithAddress)
 const { name, surname, address } = passportWithAddress;
 const copiedPassportWithAddress = {
     name,
@@ -15,5 +15,5 @@ const copiedPassportWithAddress = {
 };
 copiedPassportWithAddress.address.city = 'Bobryisk'
 
-console.log(passportWithAddress)
+
 console.log(copiedPassportWithAddress)
