@@ -7,8 +7,13 @@ let passportWithAddress = {
     }
 };
 
-const newPassportWithAddress = structuredClone(passportWithAddress)
-newPassportWithAddress.address.city = 'Bobryisk'
+const { name, surname, address } = passportWithAddress;
+const copiedPassportWithAddress = {
+    name,
+    surname,
+    address: { ...address }
+};
+copiedPassportWithAddress.address.city = 'Bobryisk'
 
 console.log(passportWithAddress)
-console.log(newPassportWithAddress)
+console.log(copiedPassportWithAddress)
