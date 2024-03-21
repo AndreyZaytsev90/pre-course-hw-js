@@ -61,8 +61,7 @@ const users = [
     }
 ];
 
-const filteredUsers = users.filter((el) => {
-    return el.id%2 === 0
-})
 
-console.log(filteredUsers)
+
+
+console.log(users.filter(el => el.id%2 === 0))
